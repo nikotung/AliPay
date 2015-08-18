@@ -1,8 +1,3 @@
-#
-#  Be sure to run `pod spec lint AliPay.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-
 Pod::Spec.new do |s|
 
   s.name         = "AliPay"
