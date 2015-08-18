@@ -16,13 +16,10 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/NikoTung"
 
 
-  s.license      = { :type => 'MIT'  }
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
+  s.license      = { :type => 'MIT' , :file => "LICENSE.md" }
 
   s.author             = { "Niko" => "Nizh2008@gmail.com" }
-  s.source           = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git"}
-
+  s.source           = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git" , :tag => s.version.to_s }
 
 
   s.platform     = :ios, '7.0'
