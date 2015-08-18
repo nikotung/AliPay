@@ -16,12 +16,12 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/NikoTung"
 
 
-  s.license      = "MIT"
+  s.license      = { :type => 'MIT'  }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   s.author             = { "Niko" => "Nizh2008@gmail.com" }
-  s.source           = { :git => "http://code.dianpingoa.com/mobile/tbeacon.git", :tag => s.version.to_s }
+  s.source           = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git"}
 
 
 
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   s.resource = "Resource/AlipaySDK.bundle"
 
   s.frameworks = "SystemConfiguration", "CoreTelephony"
-  s.libraries = 'libz'
+  s.libraries = 'z'
 
 
 end
