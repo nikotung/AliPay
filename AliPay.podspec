@@ -25,9 +25,12 @@ Pod::Spec.new do |s|
 
   
   # s.source       = { :git => "http://EXAMPLE/AliPay.git", :tag => "0.0.1" }
+  s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
 
-  s.vendored_frameworks = 'Framework/AlipaySDK.Framework'
-  s.resource = "Resource/AlipaySDK.bundle"
+  s.vendored_framework = 'AlipaySDK.Framework'
+  s.resource = "AlipaySDK.bundle"
+  s.requires_arc = true
+
 
   s.frameworks = "SystemConfiguration", "CoreTelephony"
   s.libraries = 'z'
