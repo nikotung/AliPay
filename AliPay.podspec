@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT' , :file => "LICENSE.md" }
 
   s.author             = { "Niko" => "Nizh2008@gmail.com" }
-  s.source           = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git" , :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/NikoTung/AliPay.git" , :tag => s.version.to_s }
 
 
   s.platform     = :ios, "7.0"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   
   # s.source       = { :git => "http://EXAMPLE/AliPay.git", :tag => "0.0.1" }
-  s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
+  # s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
 
   s.vendored_framework = 'AlipaySDK.Framework'
   s.resource = "AlipaySDK.bundle"
