@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git" , :tag => s.version.to_s }
 
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.watchos.deployment_target = "2.0"
