@@ -29,29 +29,34 @@ Pod::Spec.new do |s|
 
 
 
-  s.ios.vendored_frameworks = 'AlipaySDK.framework'
+#  s.ios.vendored_frameworks = 'AlipaySDK.framework'
 
-  s.vendored_libraries = 'AliPay-Extend/libcrypto.a', 'AliPay-Extend/libssl.a'
+#  s.vendored_libraries = 'AliPay-Extend/libcrypto.a', 'AliPay-Extend/libssl.a'
 
-  s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
+#  s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
 
-  s.subspec "AliPay-Extend" do |ae|
-    ae.source_files = "AliPay-Extend"
-    ae.subspec "Util" do |u|
-      u.source_files = "AliPay-Extend/Util"
-    end
+#  s.subspec "AliPay-Extend" do |ae|
+#    ae.source_files = "AliPay-Extend"
+#    ae.subspec "Util" do |u|
+#      u.source_files = "AliPay-Extend/Util"
+#    end
+#  end
+
+#  s.subspec "openssl" do |ssl|
+#    ssl.source_files = "openssl"
+#  ssl.header_dir = "openssl"
+# end
+
+
+s.subspec 'AlipaySDK' do |sdk|
+    sdk.ios.vendored_frameworks = 'AlipaySDK.framework'
+    sdk.resource = "AlipaySDK.bundle"
+    sdk.framework = 'SystemConfiguration'
   end
 
-  s.subspec "openssl" do |ssl|
-    ssl.source_files = "openssl"
-  ssl.header_dir = "openssl"
- end
+#  s.resources = "AlipaySDK.bundle"
 
-
-  s.resources = "AlipaySDK.bundle"
-
-
-  s.frameworks = "SystemConfiguration"
+# s.frameworks = "SystemConfiguration"
 
   s.requires_arc = true
 
