@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
  
   s.name         = "AliPay"
-  s.version      = "0.0.10"
+  s.version      = "0.0.11"
   s.summary      = "支付宝 sdk"
 
   s.description  = <<-DESC
@@ -30,11 +30,11 @@ Pod::Spec.new do |s|
 
 
   s.ios.vendored_frameworks = 'AlipaySDK.framework'
-  s.source_files  = "Classes", "Version/*.{h,m}"
+#  s.source_files  = "Classes", "Version/*.{h,m}"
 
 #  s.vendored_libraries = 'AliPay-Extend/libcrypto.a', 'AliPay-Extend/libssl.a'
 
-#  s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
+  s.public_header_files = "AlipaySDK.framework/Headers/**/*.h"
 
 #  s.subspec "AliPay-Extend" do |ae|
 #    ae.source_files = "AliPay-Extend"
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
 
   s.resources = "AlipaySDK.bundle"
 
-# s.frameworks = "SystemConfiguration"
+ s.frameworks = "SystemConfiguration"
 
   s.requires_arc = true
 
