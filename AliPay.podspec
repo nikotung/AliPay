@@ -25,11 +25,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
 
 
-  s.source       = { :git => "https://github.com/NikoTung/AliPay.git", :tag => s.version.to_s }
+ # s.source       = { :git => "https://github.com/NikoTung/AliPay.git", :tag => s.version.to_s }
+  s.source       = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git", :tag => s.version.to_s }
 
 
-
-#  s.ios.vendored_frameworks = 'AlipaySDK.framework'
+  s.ios.vendored_frameworks = 'AlipaySDK.framework'
+  s.source_files  = "Classes", "Version/*.{h,m}"
 
 #  s.vendored_libraries = 'AliPay-Extend/libcrypto.a', 'AliPay-Extend/libssl.a'
 
@@ -47,14 +48,14 @@ Pod::Spec.new do |s|
 #  ssl.header_dir = "openssl"
 # end
 
+# use subspec
+# s.subspec 'AlipaySDK' do |sdk|
+#    sdk.ios.vendored_frameworks = 'AlipaySDK.framework'
+#    sdk.resource = "AlipaySDK.bundle"
+#    sdk.framework = 'SystemConfiguration'
+#  end
 
-s.subspec 'AlipaySDK' do |sdk|
-    sdk.ios.vendored_frameworks = 'AlipaySDK.framework'
-    sdk.resource = "AlipaySDK.bundle"
-    sdk.framework = 'SystemConfiguration'
-  end
-
-#  s.resources = "AlipaySDK.bundle"
+  s.resources = "AlipaySDK.bundle"
 
 # s.frameworks = "SystemConfiguration"
 
