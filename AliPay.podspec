@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
  
   s.name         = "AliPay"
-  s.version      = "0.0.12"
+  s.version      = "0.0.1"
   s.summary      = "支付宝 sdk"
 
   s.description  = <<-DESC
@@ -25,12 +25,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
 
 
- # s.source       = { :git => "https://github.com/NikoTung/AliPay.git", :tag => s.version.to_s }
-  s.source       = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/NikoTung/AliPay.git", :tag => s.version.to_s }
+ # s.source       = { :git => "/Users/Niko/Projects/Mobile/edj/AliPay/.git", :tag => s.version.to_s }
 
 
   s.ios.vendored_frameworks = 'AlipaySDK.framework'
-  s.source_files  = "Classes", "Version/*.{h,m}"
+#  s.source_files  = "Classes", "Version/*.{h,m}"
 
 #  s.vendored_libraries = 'AliPay-Extend/libcrypto.a', 'AliPay-Extend/libssl.a'
 
