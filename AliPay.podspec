@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
  
   s.name         = "AliPay"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "支付宝 sdk"
 
   s.description  = <<-DESC
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
 
   s.ios.vendored_frameworks = 'AlipaySDK.framework'
-#  s.source_files  = "Classes", "Version/*.{h,m}"
+  s.source_files  = "Classes", "Version/*.{h,m}"
 
 #  s.vendored_libraries = 'AliPay-Extend/libcrypto.a', 'AliPay-Extend/libssl.a'
 
